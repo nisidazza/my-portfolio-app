@@ -8,7 +8,7 @@ import {
   faCogs,
   faEye,
 } from "@fortawesome/free-solid-svg-icons";
-import {faLinkedinIn, faGithub} from "@fortawesome/free-brands-svg-icons";
+import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 class SideNav extends React.Component {
   render() {
@@ -18,9 +18,13 @@ class SideNav extends React.Component {
           <NavItem>Logo</NavItem>
         </div>
         <div className="info-container display-flex">
-          <NavLink href="#">
-            <FontAwesomeIcon icon={faHome} />
-          </NavLink>
+          <div>
+            <NavLink  href="#">
+              <FontAwesomeIcon
+                icon={faHome}
+              />
+            </NavLink>
+          </div>
           <NavLink href="#">
             <FontAwesomeIcon icon={faUser} />
           </NavLink>
@@ -35,7 +39,9 @@ class SideNav extends React.Component {
           <NavLink href="#">
             <FontAwesomeIcon icon={faLinkedinIn} />
           </NavLink>
-          <NavLink href="#"><FontAwesomeIcon icon={faGithub} /></NavLink>
+          <NavLink href="#">
+            <FontAwesomeIcon icon={faGithub} />
+          </NavLink>
         </div>
       </Nav>
     );

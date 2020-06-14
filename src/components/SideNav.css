@@ -1,7 +1,7 @@
 ul.nav-container {
     height: 100vh !important;
-    width:120px;
-    background-color: coral;
+    width:70px;
+    background-color:  #c83349;
     position: fixed;
     text-align: center;
 }
@@ -9,6 +9,10 @@ ul.nav-container {
 .display-flex {
     display: flex;
     flex-direction: column;
+}
+
+span.span-text {
+    font-size:22px;
 }
 
 div.logo-container {
@@ -23,5 +27,4 @@ div.info-container {
 div.social-container {
     justify-content: space-around;
     height: 20vh !important;
-    
 }
