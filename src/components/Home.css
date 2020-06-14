@@ -1,4 +1,18 @@
 .home-container {
     height: inherit;
-    /*background: url('../../public/images/home-background-image.jpg');*/
+    background: url('../../public/images/home-background-image.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+div.intro-text {
+    color: white;
+    position: absolute;
+    left: 10%;
+    top: 35%;
+    width: 35%;
+    max-height: 90%;
+    font-size: 70px !important;
 }
