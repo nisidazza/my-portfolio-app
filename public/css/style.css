@@ -1,0 +1,9 @@
+body{
+    height:100vh;
+    font-family:  'Indie Flower', cursive !important;
+    font-size:25px !important;
+}
+
+#root {
+    height:100vh;
+}
