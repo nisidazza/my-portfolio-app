@@ -1,5 +1,6 @@
 import React from "react";
 import { Nav, NavLink, NavItem } from "reactstrap";
+import { Link } from "react-router-dom";
 import "./SideNav.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -19,19 +20,21 @@ class SideNav extends React.Component {
         </div>
         <div className="info-container display-flex">
           <div>
-            <NavLink  href="/">
-              <FontAwesomeIcon
-                icon={faHome}
-              />
+            <NavLink>
+              <Link to="/">
+                <FontAwesomeIcon icon={faHome} />
+              </Link>
             </NavLink>
           </div>
-          <NavLink href="#">
-            <FontAwesomeIcon icon={faUser} />
+          <NavLink>
+            <Link to="/about">
+              <FontAwesomeIcon icon={faUser} />
+            </Link>
           </NavLink>
-          <NavLink href="#">
+          <NavLink>
             <FontAwesomeIcon icon={faCogs} />
           </NavLink>
-          <NavLink href="#">
+          <NavLink>
             <FontAwesomeIcon icon={faEye} />
           </NavLink>
         </div>
