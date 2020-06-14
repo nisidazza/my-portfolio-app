@@ -4,6 +4,7 @@ ul.nav-container {
     background-color:  #c83349;
     position: fixed;
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .display-flex {
