@@ -1,6 +1,14 @@
 import React from "react";
 import { Nav, NavLink, NavItem } from "reactstrap";
-import './SideNav.css'
+import "./SideNav.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHome,
+  faUser,
+  faCogs,
+  faEye,
+} from "@fortawesome/free-solid-svg-icons";
+import {faLinkedinIn, faGithub} from "@fortawesome/free-brands-svg-icons";
 
 class SideNav extends React.Component {
   render() {
@@ -10,14 +18,24 @@ class SideNav extends React.Component {
           <NavItem>Logo</NavItem>
         </div>
         <div className="info-container display-flex">
-          <NavLink href="#">Home</NavLink>
-          <NavLink href="#">About</NavLink>
-          <NavLink href="#">Skills</NavLink>
-          <NavLink href="#">Project</NavLink>
+          <NavLink href="#">
+            <FontAwesomeIcon icon={faHome} />
+          </NavLink>
+          <NavLink href="#">
+            <FontAwesomeIcon icon={faUser} />
+          </NavLink>
+          <NavLink href="#">
+            <FontAwesomeIcon icon={faCogs} />
+          </NavLink>
+          <NavLink href="#">
+            <FontAwesomeIcon icon={faEye} />
+          </NavLink>
         </div>
         <div className="social-container display-flex">
-          <NavLink href="#">LinkedIn</NavLink>
-          <NavLink href="#">GitHub</NavLink>
+          <NavLink href="#">
+            <FontAwesomeIcon icon={faLinkedinIn} />
+          </NavLink>
+          <NavLink href="#"><FontAwesomeIcon icon={faGithub} /></NavLink>
         </div>
       </Nav>
     );
