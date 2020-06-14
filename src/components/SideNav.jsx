@@ -19,7 +19,7 @@ class SideNav extends React.Component {
         </div>
         <div className="info-container display-flex">
           <div>
-            <NavLink  href="#">
+            <NavLink  href="/">
               <FontAwesomeIcon
                 icon={faHome}
               />
