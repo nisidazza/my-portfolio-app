@@ -1,0 +1,27 @@
+ul.nav-container {
+    height: 100vh !important;
+    width:120px;
+    background-color: coral;
+    position: fixed;
+    text-align: center;
+}
+
+.display-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+div.logo-container {
+    height: 10vh !important;
+}
+
+div.info-container {
+    justify-content: space-evenly;
+    height: 70vh !important;
+}
+
+div.social-container {
+    justify-content: space-around;
+    height: 20vh !important;
+    
+}
