@@ -1,7 +1,7 @@
 ul.nav-container {
     height: 100vh !important;
     width:70px;
-    background-color:  #c83349;
+    background-color: rgb(10, 10, 46);
     position: fixed;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
@@ -11,6 +11,10 @@ ul.nav-container {
     display: flex;
     flex-direction: column;
 }
+
+svg.svg-inline--fa:hover {
+    color:purple;
+} 
 
 span.span-text {
     font-size:22px;
