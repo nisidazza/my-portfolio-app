@@ -1,5 +1,5 @@
 ul.nav-container {
-    height: 100vh !important;
+    min-height: 100%;
     width:70px;
     background-color: rgb(10, 10, 46);
     position: fixed;
