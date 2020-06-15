@@ -48,13 +48,48 @@ class Projects extends React.Component {
                   </a>
                   .
                 </CardText>
-                <CardLink rel="noopener noreferrer" target="_blank" href="https://github.com/nisidazza/myRecipesBookReact">Source Code</CardLink>
-                <CardLink rel="noopener noreferrer" target="_blank" href="https://nisida-book-recipes-react.herokuapp.com/#/">
+                <CardLink
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  href="https://github.com/nisidazza/myRecipesBookReact"
+                >
+                  Source Code
+                </CardLink>
+                <CardLink
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  href="https://nisida-book-recipes-react.herokuapp.com/#/"
+                >
                   My Recipe Book Webpage
                 </CardLink>
               </CardBody>
             </Card>
           </Col>
+
+          <Col sm="4">
+            <Card>
+              <CardBody>
+                <CardTitle>Personal Blog</CardTitle>
+              </CardBody>
+              <CardImg src="/images/personal-blog.jpg" alt="Personal Blog" />
+              <CardBody>
+                <CardText>
+                  My first Personal Blog hosted on GitHub pages and built during
+                  Enspiral DevAcademy Foundation. Follow the beginning of my
+                  journey to becoming a Web Developer while I was getting
+                  familiar with the basics: HTML, CSS and a bit of JavaScript.
+                </CardText>
+                <CardLink
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  href="https://nisidazza.github.io/"
+                >
+                  Personal Blog Webpage
+                </CardLink>
+              </CardBody>
+            </Card>
+          </Col>
+
           <Col sm="4">
             <Card>
               <CardBody>
@@ -72,7 +107,11 @@ class Projects extends React.Component {
                   another Developer and a Chief Storyteller; most of the work
                   was done remotely, with daily catch ups on Slack.
                 </CardText>
-                <CardLink rel="noopener noreferrer" target="_blank" href="https://genderequal.nz/datastories/">
+                <CardLink
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  href="https://genderequal.nz/datastories/"
+                >
                   Gender Dashboard Webpage
                 </CardLink>
               </CardBody>
