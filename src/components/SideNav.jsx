@@ -35,10 +35,10 @@ class SideNav extends React.Component {
           </NavLink>
         </div>
         <div className="social-container display-flex">
-          <NavLink href="#">
+          <NavLink rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/nisida-azzalini-26011987/?locale=en_US">
             <FontAwesomeIcon icon={faLinkedinIn} />
           </NavLink>
-          <NavLink href="#">
+          <NavLink rel="noopener noreferrer" target="_blank" href="https://github.com/nisidazza">
             <FontAwesomeIcon icon={faGithub} />
           </NavLink>
         </div>
