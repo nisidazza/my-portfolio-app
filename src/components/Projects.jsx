@@ -61,7 +61,7 @@ class Projects extends React.Component {
                 <CardTitle>Gender Dashboard</CardTitle>
               </CardBody>
               <CardImg
-                src="/images/gender-dashboard.jpg"
+                src="/images/gender-dashboard-nz.jpg"
                 alt="Gender Dashboard"
               />
               <CardBody>
