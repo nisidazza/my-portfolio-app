@@ -15,7 +15,7 @@ class About extends React.Component {
         </h6>
         <h6>
           Well-organized, flexible and creative person, with a keen eye for detail.
-          I work well on my own but I enjoy collaborating with other people to solve problems, sharing ideas and find solutions.
+          I work well on my own but I also enjoy collaborating with other people to solve problems, sharing ideas and find solutions.
         </h6>
         <h6>
         Corgi lover, movie buff, fan of Star Trek and murder-mystery tv-series. I like painting, cooking and I enjoy long walks.
