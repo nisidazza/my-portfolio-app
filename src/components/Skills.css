@@ -1,0 +1,12 @@
+div.skills-container {
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 45%;
+    max-height: 90%;
+}
+
+ul {
+    font-size: 20px;
+}
