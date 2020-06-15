@@ -5,6 +5,7 @@ import SideNav from "./components/SideNav";
 import Home from "./components/Home";
 import About from "./components/About";
 import Skills from "./components/Skills";
+import Projects from "./components/Projects";
 
 class App extends React.Component {
   render() {
@@ -16,6 +17,7 @@ class App extends React.Component {
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/skills" component={Skills} />
+            <Route path="/projects" component={Projects} />
           </Switch>
         </div>
       </Router>
