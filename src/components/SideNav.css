@@ -5,6 +5,7 @@ ul.nav-container {
     position: fixed;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
+    z-index: 1;
 }
 
 .display-flex {
