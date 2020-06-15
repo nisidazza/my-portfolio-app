@@ -1,0 +1,9 @@
+div.home-container {
+    color: white;
+    position: absolute;
+    top: 200px;
+    max-width: 600px;
+    font-size: 70px !important;
+    font-weight: bolder;
+}
+

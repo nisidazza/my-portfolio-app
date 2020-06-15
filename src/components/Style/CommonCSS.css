@@ -1,0 +1,32 @@
+h1.title-animation {
+    color: purple;
+}
+
+h1.title-animation span:hover {
+   animation: bounce 1s ease infinite alternate;
+   color: rgb(10, 10, 46); 
+   line-height: 110px;
+   display: inline-block;
+   font-size: 70px;
+   font-weight: bolder;
+   text-shadow: 0 1px 0 #007bff,
+               0 2px 0 #007bff,
+               0 3px 0 #007bff,
+               0 13px 0 transparent,
+			   0 14px 0 transparent,
+               0 15px 0 transparent,
+               0 10px 10px rgba(0, 0, 0, .4);
+}
+
+@keyframes bounce {
+    100% {
+        top: -2px;
+        text-shadow: 0 1px 0 #007bff,
+                     0 2px 0 #007bff,
+                     0 3px 0 #007bff,
+                     0 4px 0 #007bff,
+                     0 5px 0 #007bff,
+                     0 6px 0 #007bff,
+                     0 50px 25px rgba(0, 0, 0, .2);
+      }
+}

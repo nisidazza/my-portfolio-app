@@ -1,0 +1,31 @@
+div.projects-container {
+    color: white;
+    position: absolute;
+    top: 150px;
+    max-width: 100%;
+}
+
+div.card {
+    background-color: rgb(10, 10, 46);
+    min-height: 100%;
+    box-shadow: 1px 1px 7px white;
+}
+
+img.card-img {
+    object-fit: cover;
+    border: 3px solid purple;
+}
+
+div.card-body {
+    padding: 0.5em;
+    text-align: center;
+    flex: none;
+}
+
+.card-title {
+    margin-bottom: 0 !important;
+}
+
+p.card-text, a.card-link {
+    font-size: 15px;
+}
