@@ -32,7 +32,9 @@ class SideNav extends React.Component {
             </Link>
           </NavLink>
           <NavLink>
-            <FontAwesomeIcon icon={faCogs} />
+            <Link to="/skills">
+              <FontAwesomeIcon icon={faCogs} />
+            </Link>
           </NavLink>
           <NavLink>
             <FontAwesomeIcon icon={faEye} />
