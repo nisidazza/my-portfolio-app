@@ -1,10 +1,9 @@
 div.about-me-container {
     color: white;
     position: absolute;
-    top: 20%;
-    left: 10%;
-    width: 45%;
-    max-height: 90%;
+    top: 150px;
+    max-width: 600px;
+    max-height: fit-content;
 }
 
 h1.title {

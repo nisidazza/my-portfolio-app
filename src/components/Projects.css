@@ -1,8 +1,8 @@
 div.projects-container {
     color: white;
     position: absolute;
-    top: 10%;
-    left: 7%;
+    top: 150px;
+    max-width: 100%;
 }
 
 div.card {

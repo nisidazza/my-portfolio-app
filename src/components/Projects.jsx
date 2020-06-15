@@ -15,9 +15,9 @@ class Projects extends React.Component {
   render() {
     return (
       <div className="projects-container">
-        <h1 className="title mb-4">Projects</h1>
+        <h1 className="title ml-2 mb-4">Projects</h1>
         <Row className="m-0">
-          <Col sm="3">
+          <Col sm="4">
             <Card>
               <CardBody>
                 <CardTitle>My Recipe Book</CardTitle>
@@ -55,7 +55,7 @@ class Projects extends React.Component {
               </CardBody>
             </Card>
           </Col>
-          <Col sm="3">
+          <Col sm="4">
             <Card>
               <CardBody>
                 <CardTitle>Gender Dashboard</CardTitle>
