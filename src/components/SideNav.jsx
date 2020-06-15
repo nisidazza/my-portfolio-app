@@ -1,7 +1,7 @@
 import React from "react";
 import { Nav, NavLink, NavItem } from "reactstrap";
 import { Link } from "react-router-dom";
-import "./SideNav.css";
+import "./Style/SideNav.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHome,

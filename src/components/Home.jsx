@@ -1,6 +1,6 @@
 import React from "react";
 import { Col } from "reactstrap";
-import "./Home.css";
+import "./Style/Home.css";
 import nl2br from "react-newline-to-break";
 
 class Home extends React.Component {

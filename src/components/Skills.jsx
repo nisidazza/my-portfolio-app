@@ -1,13 +1,21 @@
 import React from "react";
 import { Col } from "reactstrap";
-import "./Skills.css";
+import "./Style/Skills.css";
+import "./Style/CommonCSS.css";
 
 class Skills extends React.Component {
   render() {
     return (
       <div className="skills-container">
         <Col>
-          <h1 className="title">Skills</h1>
+          <h1 className="title-animation">
+            <span>S</span>
+            <span>k</span>
+            <span>i</span>
+            <span>l</span>
+            <span>l</span>
+            <span>s</span>
+            </h1>
           <h5>Front End Development</h5>
           <ul>
             <li>HTML</li>

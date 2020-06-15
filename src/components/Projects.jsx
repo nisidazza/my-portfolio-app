@@ -1,5 +1,6 @@
 import React from "react";
-import "./Projects.css";
+import "./Style/Projects.css";
+import "./Style/CommonCSS.css";
 import {
   Card,
   CardImg,
@@ -15,7 +16,16 @@ class Projects extends React.Component {
   render() {
     return (
       <div className="projects-container">
-        <h1 className="title ml-2 mb-4">Projects</h1>
+        <h1 className="title-animation ml-2 mb-4">
+          <span>P</span>
+          <span>r</span>
+          <span>o</span>
+          <span>j</span>
+          <span>e</span>
+          <span>c</span>
+          <span>t</span>
+          <span>s</span>
+        </h1>
         <Row className="m-0">
           <Col sm="4">
             <Card>
