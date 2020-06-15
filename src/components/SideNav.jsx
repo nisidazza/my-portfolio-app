@@ -20,24 +20,18 @@ class SideNav extends React.Component {
         </div>
         <div className="info-container display-flex">
           <div>
-            <NavLink>
-              <Link to="/">
+            <NavLink tag={Link} to="/">
                 <FontAwesomeIcon icon={faHome} />
-              </Link>
             </NavLink>
           </div>
-          <NavLink>
-            <Link to="/about">
+          <NavLink tag={Link} to="/about">
               <FontAwesomeIcon icon={faUser} />
-            </Link>
           </NavLink>
-          <NavLink>
-            <Link to="/skills">
+          <NavLink tag={Link} to="/skills">
               <FontAwesomeIcon icon={faCogs} />
-            </Link>
           </NavLink>
-          <NavLink>
-            <FontAwesomeIcon icon={faEye} />
+          <NavLink tag={Link} to="/projects">
+              <FontAwesomeIcon icon={faEye} />
           </NavLink>
         </div>
         <div className="social-container display-flex">
