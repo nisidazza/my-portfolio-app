@@ -1,0 +1,14 @@
+div.about-me-container {
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 45%;
+    max-height: 90%;
+}
+
+h1.title {
+    font-size: 70px;
+    font-weight: bolder;
+    color: purple;
+}

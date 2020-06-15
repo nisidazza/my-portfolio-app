@@ -6,8 +6,9 @@ div.intro-text {
     color: white;
     position: absolute;
     left: 10%;
-    top: 35%;
+    top: 30%;
     width: 35%;
     max-height: 90%;
     font-size: 70px !important;
+    font-weight: bolder;
 }
