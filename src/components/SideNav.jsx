@@ -16,7 +16,9 @@ class SideNav extends React.Component {
     return (
       <Nav vertical className="nav-container">
         <div className="logo-container display-flex">
-          <NavItem>Logo</NavItem>
+          <NavItem>
+            <img className="logo-img" src="/images/LogoNA6.png" alt="Logo"/>
+          </NavItem>
         </div>
         <div className="info-container display-flex">
           <div>

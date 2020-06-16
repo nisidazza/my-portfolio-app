@@ -34,3 +34,15 @@ div.social-container {
     justify-content: space-around;
     height: 20vh !important;
 }
+
+li.nav-item {
+    height: 70px;
+    width:70px;
+}
+
+.logo-img {
+    object-fit: cover;
+    display: block;
+    margin-top: 15px;
+    width:100%;
+}
