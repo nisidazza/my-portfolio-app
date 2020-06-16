@@ -1,9 +1,74 @@
 div.home-container {
     color: white;
-    position: absolute;
-    top: 200px;
-    max-width: 600px;
-    font-size: 70px !important;
-    font-weight: bolder;
+    height: 100%;
 }
 
+.animation-typewriter {
+    position: relative;
+    top: 200px;
+    max-width: 600px;
+}
+
+.animation-typewriter p {
+    font-size: 70px !important;
+    font-weight: bolder;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.animation-typewriter p:nth-child(1) {
+    width: 2.5em;
+    animation: line1 2s steps(20, end);
+    animation-fill-mode: forwards;
+}
+
+.animation-typewriter p:nth-child(2) {
+    width: 8.5em;
+    opacity: 0;
+    animation: line2 2s steps(40, end);
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.animation-typewriter p:nth-child(3) {
+    width:10.5em;
+    opacity: 0;
+    animation: line3 2s steps(40,end);
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes line1 {
+   0%  {
+        width: 0;
+    }
+    
+    100% {
+        border: none;
+    }
+}
+
+@keyframes line2 {
+    0%  {
+         width: 0;
+     }
+     1% {
+         opacity:1;
+     }
+     100% {
+         opacity: 1;
+         border: none;
+     }
+ }
+
+ @keyframes line3 {
+    0%  {
+        width: 0;
+    }
+    1% {
+        opacity:1;
+    }
+    100% {
+        opacity: 1;
+    }
+ }
