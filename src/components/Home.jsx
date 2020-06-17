@@ -10,12 +10,12 @@ class Home extends React.Component {
       <Row className="home-container">
         <Col sm="6">
           <div className="animation-typewriter">
-            <p>
+            <p className="home-p">
               <span className="color-change first-letter">H</span>
               <span className="color-change">i</span>
               <span className="color-change">,</span>
             </p>
-            <p>
+            <p className="home-p">
               <span className="color-change">I</span>
               <span className="color-change">'</span>
               <span className="color-change">m</span>
@@ -28,7 +28,7 @@ class Home extends React.Component {
               <span className="color-change name-letter">a</span>
               <span className="color-change">,</span>
             </p>
-            <p>
+            <p className="home-p">
               <span className="color-change">W</span>
               <span className="color-change">e</span>
               <span className="color-change">b</span>
