@@ -8,7 +8,7 @@ div.col-sm-6 {
 }
 
 p {
-    box-shadow: 8px 7px 7px white;
+    box-shadow: 8px 7px 7px white, 9px 8px 8px purple;
     text-align: center;
 }
 
