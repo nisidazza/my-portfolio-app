@@ -2,6 +2,7 @@ div.skills-container {
     color: white;
     position: absolute;
     top: 150px;
+    margin-left:20px;
     max-width: 600px;
     max-height: fit-content;
 }

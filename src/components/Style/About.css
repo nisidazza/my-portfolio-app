@@ -3,6 +3,7 @@ div.about-me-container {
     top: 150px;
     max-width: 600px;
     max-height: fit-content;
+    margin-left: 20px;
 }
 
 h6 {
