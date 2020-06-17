@@ -7,11 +7,25 @@ div.col-sm-6 {
     min-height: 100%;
 }
 
-.animation-typewriter {
+p {
+    box-shadow: 8px 7px 7px white;
+    text-align: center;
+}
+
+span.color-change:hover {
+    color: purple;
+}
+
+span.color-change.name-letter {
+    color:purple;
+}
+
+div.animation-typewriter {
     position: relative;
-    margin-left: 70px;
+    margin-left: 50px;
     top: 200px;
     max-width: 600px;
+    object-fit: contain;
 }
 
 .animation-typewriter p {
@@ -22,13 +36,13 @@ div.col-sm-6 {
 }
 
 .animation-typewriter p:nth-child(1) {
-    width: 2.5em;
-    animation: line1 2s steps(20, end);
+    width: 1.6em;
+    animation: line1 1.5s steps(20, end);
     animation-fill-mode: forwards;
 }
 
 .animation-typewriter p:nth-child(2) {
-    width: 8.5em;
+    width: 5.2em;
     opacity: 0;
     animation: line2 2s steps(40, end);
     animation-delay: 2s;
@@ -36,7 +50,7 @@ div.col-sm-6 {
 }
 
 .animation-typewriter p:nth-child(3) {
-    width:10.5em;
+    width:7.8em;
     opacity: 0;
     animation: line3 2s steps(40,end);
     animation-delay: 4s;
