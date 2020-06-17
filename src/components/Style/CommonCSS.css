@@ -1,5 +1,6 @@
 h1.title-animation {
     color: purple;
+    font-weight: bold;
 }
 
 h1.title-animation span:hover {

@@ -21,10 +21,6 @@ span.span-text {
     font-size:22px;
 }
 
-div.logo-container {
-    height: 10vh !important;
-}
-
 div.info-container {
     justify-content: space-evenly;
     height: 70vh !important;
@@ -38,6 +34,7 @@ div.social-container {
 li.nav-item {
     height: 70px;
     width:70px;
+    margin-bottom: 20px;
 }
 
 .logo-img {
