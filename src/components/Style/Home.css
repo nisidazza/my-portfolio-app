@@ -1,10 +1,15 @@
-div.home-container {
+div.home-container.row {
     color: white;
     height: 100%;
 }
 
+div.col-sm-6 {
+    min-height: 100%;
+}
+
 .animation-typewriter {
     position: relative;
+    margin-left: 70px;
     top: 200px;
     max-width: 600px;
 }
