@@ -37,7 +37,7 @@ div.animation-typewriter {
 
 .animation-typewriter p:nth-child(1) {
     width: 1.6em;
-    animation: line1 1.5s steps(20, end);
+    animation: line1 1s steps(20, end);
     animation-fill-mode: forwards;
 }
 
@@ -45,7 +45,7 @@ div.animation-typewriter {
     width: 5.2em;
     opacity: 0;
     animation: line2 2s steps(40, end);
-    animation-delay: 2s;
+    animation-delay: 1s;
     animation-fill-mode: forwards;
 }
 
@@ -53,7 +53,7 @@ div.animation-typewriter {
     width:7.8em;
     opacity: 0;
     animation: line3 2s steps(40,end);
-    animation-delay: 4s;
+    animation-delay: 3s;
     animation-fill-mode: forwards;
 }
 
