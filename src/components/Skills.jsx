@@ -2,6 +2,8 @@ import React from "react";
 import { Col, Row } from "reactstrap";
 import "./Style/Skills.css";
 import "./Style/CommonCSS.css";
+import {Document, Page} from "react-pdf";
+
 
 class Skills extends React.Component {
   render() {
@@ -36,6 +38,11 @@ class Skills extends React.Component {
           </div>
         </Col>
         <Col sm="6">
+          <Document file="../public/Nisida_Azzalini_CV.pdf">
+            <Page>
+
+            </Page>
+          </Document>
         </Col>
       </Row>
     );
