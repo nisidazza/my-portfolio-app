@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Row } from "reactstrap";
+import { Col, Row, Button } from "reactstrap";
 import "./Style/Skills.css";
 import "./Style/CommonCSS.css";
 import { pdfjs, Document, Page } from "react-pdf";
@@ -9,34 +9,34 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 class Skills extends React.Component {
   constructor(props) {
     super(props);
-    
+
     this.state = {
-      pageNumber : 1,
-      numPages: null
-    }
+      pageNumber: 1,
+      numPages: null,
+    };
   }
 
   onPdfSuccessfullyLoaded = (pdf) => {
     this.setState({
-      numPages : pdf.numPages
-    })
-  }
+      numPages: pdf.numPages,
+    });
+  };
 
   previousPage = () => {
-    if(this.state.pageNumber === 2) {
+    if (this.state.pageNumber === 2) {
       this.setState({
-        pageNumber : this.state.pageNumber - 1
-      })
+        pageNumber: this.state.pageNumber - 1,
+      });
     }
-  }
+  };
 
   nextPage = () => {
-    if(this.state.pageNumber === 1) {
+    if (this.state.pageNumber === 1) {
       this.setState({
-        pageNumber: this.state.pageNumber + 1
-      })
+        pageNumber: this.state.pageNumber + 1,
+      });
     }
-  }
+  };
 
   render() {
     return (
@@ -77,28 +77,36 @@ class Skills extends React.Component {
             >
               <Page pageNumber={this.state.pageNumber}></Page>
             </Document>
-            <div>
-              <p>
-                Page {this.state.pageNumber || (this.state.numPages ? 1 : "--")} 
-                of {this.state.numPages || "--"}
-              </p>
-              <p>
-
-              </p>
-              <button
-                type="button"
-                disabled={this.state.pageNumber <= 1}
-                onClick={this.previousPage}
-              >
-                Previous
-              </button>
-              <button
-                type="button"
-                disabled={this.state.pageNumber >= this.state.numberOfPages}
-                onClick={this.nextPage}
-              >
-                Next
-              </button>
+            <div className="page-btns">
+              <div className="prev-btn">
+                <Button
+                  disabled={this.state.pageNumber <= 1}
+                  onClick={this.previousPage}
+                  outline
+                  color="primary"
+                  className="btn-size"
+                >
+                  Previous
+                </Button>
+              </div>
+              <div className="num-of-pages">
+                <p>
+                  Page{" "}
+                  {this.state.pageNumber || (this.state.numPages ? 1 : "--")} of{" "}
+                  {this.state.numPages || "--"}
+                </p>
+              </div>
+              <div className="next-btn">
+                <Button
+                  disabled={this.state.pageNumber >= this.state.numberOfPages}
+                  onClick={this.nextPage}
+                  outline
+                  color="primary"
+                  className="btn-size next"
+                >
+                  Next
+                </Button>
+              </div>
             </div>
           </div>
         </Col>

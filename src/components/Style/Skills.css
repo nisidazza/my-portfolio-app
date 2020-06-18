@@ -1,7 +1,6 @@
 div.skills-container.row {
-    position:absolute;
+    position:relative;
     height: 100%;
-    width:100%;
 }
 
 div.skills-list-container {
@@ -13,8 +12,42 @@ div.skills-list-container {
 }
 
 div.pdf-container {
-    margin-top:40px;
+    margin-top:20px;
     color: white;
+    transform: translateX(50px);
+}
+
+div.num-of-pages {
+    font-size: 15px;
+    text-align: center;
+    transform: translateX(190px);
+}
+
+button.btn-size {
+    padding: 5px;
+    font-size: 15px;
+}
+
+button.btn-size.next {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+div.page-btns {
+    display: inline-flex;
+    color: black;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    transform: translateY(-50px);
+}
+
+div.next-btn {
+    position:relative;
+    transform: translateX(300px);
+}
+
+div.prev-btn {
+    transform: translateX(70px);
 }
 
 ul {
