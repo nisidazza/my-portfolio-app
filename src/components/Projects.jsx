@@ -36,27 +36,10 @@ class Projects extends React.Component {
               <CardBody>
                 <CardText>
                   A Web Application to manage your favourite recipes and browse
-                  the public recipes of other users. I enjoyed a lot writing
-                  this web application as my personal project at Enspiral Dev
-                  Academy.I also enjoyed making a couple of videos to explain
-                  <a
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    href="https://www.youtube.com/watch?v=NcoKnBe5KOs"
-                  >
-                    {" "}
-                    how it works
-                  </a>
-                  , and{" "}
-                  <a
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    href="https://www.youtube.com/embed/ahCB_8OARCI?autoplay=1"
-                  >
-                    {" "}
-                    how it is built
-                  </a>
-                  .
+                  the public recipes of other users. The back-end is built on
+                  Node.js with Express.js as a framework. Knex.js queries for
+                  the data from PostgreSQL database. The front-end is built in React.js, 
+                  with the help of Bootstrap and CSS for layout and styling.
                 </CardText>
                 <CardLink
                   rel="noopener noreferrer"
@@ -113,9 +96,7 @@ class Projects extends React.Component {
                 <CardText>
                   The project consisted in designing and developing the MVP
                   stage of the Gender Dashboard web page. It is part of a
-                  pre-existent website, based on WordPress. I was teamed up with
-                  another Developer and a Chief Storyteller; most of the work
-                  was done remotely, with daily catch ups on Slack.
+                  pre-existent website, based on WordPress.
                 </CardText>
                 <CardLink
                   rel="noopener noreferrer"
