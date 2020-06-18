@@ -12,6 +12,11 @@ div.skills-list-container {
     max-width: 600px;
 }
 
+div.pdf-container {
+    margin-top:40px;
+    color: white;
+}
+
 ul {
     font-size: 20px;
 }

@@ -2,10 +2,42 @@ import React from "react";
 import { Col, Row } from "reactstrap";
 import "./Style/Skills.css";
 import "./Style/CommonCSS.css";
-import {Document, Page} from "react-pdf";
-
+import { pdfjs, Document, Page } from "react-pdf";
+import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 class Skills extends React.Component {
+  constructor(props) {
+    super(props);
+    
+    this.state = {
+      pageNumber : 1,
+      numPages: null
+    }
+  }
+
+  onPdfSuccessfullyLoaded = (pdf) => {
+    this.setState({
+      numPages : pdf.numPages
+    })
+  }
+
+  previousPage = () => {
+    if(this.state.pageNumber === 2) {
+      this.setState({
+        pageNumber : this.state.pageNumber - 1
+      })
+    }
+  }
+
+  nextPage = () => {
+    if(this.state.pageNumber === 1) {
+      this.setState({
+        pageNumber: this.state.pageNumber + 1
+      })
+    }
+  }
+
   render() {
     return (
       <Row className="skills-container">
@@ -38,11 +70,37 @@ class Skills extends React.Component {
           </div>
         </Col>
         <Col sm="6">
-          <Document file="../public/Nisida_Azzalini_CV.pdf">
-            <Page>
+          <div className="pdf-container">
+            <Document
+              file="../Nisida_Azzalini_CV.pdf"
+              onLoadSuccess={this.onPdfSuccessfullyLoaded}
+            >
+              <Page pageNumber={this.state.pageNumber}></Page>
+            </Document>
+            <div>
+              <p>
+                Page {this.state.pageNumber || (this.state.numPages ? 1 : "--")} 
+                of {this.state.numPages || "--"}
+              </p>
+              <p>
 
-            </Page>
-          </Document>
+              </p>
+              <button
+                type="button"
+                disabled={this.state.pageNumber <= 1}
+                onClick={this.previousPage}
+              >
+                Previous
+              </button>
+              <button
+                type="button"
+                disabled={this.state.pageNumber >= this.state.numberOfPages}
+                onClick={this.nextPage}
+              >
+                Next
+              </button>
+            </div>
+          </div>
         </Col>
       </Row>
     );
