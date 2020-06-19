@@ -13,12 +13,14 @@ class Skills extends React.Component {
     this.state = {
       pageNumber: 1,
       numPages: null,
+      isLoaded: false,
     };
   }
 
   onPdfSuccessfullyLoaded = (pdf) => {
     this.setState({
       numPages: pdf.numPages,
+      isLoaded: true,
     });
   };
 
@@ -77,37 +79,41 @@ class Skills extends React.Component {
             >
               <Page pageNumber={this.state.pageNumber}></Page>
             </Document>
-            <div className="page-btns">
-              <div className="prev-btn">
-                <Button
-                  disabled={this.state.pageNumber <= 1}
-                  onClick={this.previousPage}
-                  outline
-                  color="primary"
-                  className="btn-size"
-                >
-                  Previous
-                </Button>
+            {this.state.isLoaded ? (
+              <div className="page-btns">
+                <div className="prev-btn">
+                  <Button
+                    disabled={this.state.pageNumber <= 1}
+                    onClick={this.previousPage}
+                    outline
+                    color="primary"
+                    className="btn-size"
+                  >
+                    Previous
+                  </Button>
+                </div>
+                <div className="num-of-pages">
+                  <p>
+                    Page{" "}
+                    {this.state.pageNumber || (this.state.numPages ? 1 : "--")}{" "}
+                    of {this.state.numPages || "--"}
+                  </p>
+                </div>
+                <div className="next-btn">
+                  <Button
+                    disabled={this.state.pageNumber >= this.state.numberOfPages}
+                    onClick={this.nextPage}
+                    outline
+                    color="primary"
+                    className="btn-size next"
+                  >
+                    Next
+                  </Button>
+                </div>
               </div>
-              <div className="num-of-pages">
-                <p>
-                  Page{" "}
-                  {this.state.pageNumber || (this.state.numPages ? 1 : "--")} of{" "}
-                  {this.state.numPages || "--"}
-                </p>
-              </div>
-              <div className="next-btn">
-                <Button
-                  disabled={this.state.pageNumber >= this.state.numberOfPages}
-                  onClick={this.nextPage}
-                  outline
-                  color="primary"
-                  className="btn-size next"
-                >
-                  Next
-                </Button>
-              </div>
-            </div>
+            ) : (
+              ""
+            )}
           </div>
         </Col>
       </Row>
