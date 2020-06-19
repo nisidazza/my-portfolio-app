@@ -1,4 +1,6 @@
 ul.nav-container {
+    display: block;
+    float: left;
     min-height: 100%;
     max-width:70px;
     background-color: rgb(10, 10, 46);
@@ -21,14 +23,14 @@ span.span-text {
     font-size:22px;
 }
 
-div.info-container {
+div.icons-container {
     justify-content: space-evenly;
-    height: 70vh !important;
+    height: 70vh;
 }
 
 div.social-container {
     justify-content: space-around;
-    height: 20vh !important;
+    height: 20vh;
 }
 
 li.nav-item {
@@ -37,9 +39,15 @@ li.nav-item {
     margin-bottom: 20px;
 }
 
+div.logo-container {
+    justify-content: space-around;
+    height: 10vh;
+}
+
 .logo-img {
     object-fit: cover;
     display: block;
     margin-top: 15px;
     width:100%;
 }
+

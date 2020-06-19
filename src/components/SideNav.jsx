@@ -20,7 +20,7 @@ class SideNav extends React.Component {
             <img className="logo-img" src="/images/LogoNA6.png" alt="Logo"/>
           </NavItem>
         </div>
-        <div className="info-container display-flex">
+        <div className="icons-container display-flex">
           <div>
             <NavLink tag={Link} to="/">
                 <FontAwesomeIcon icon={faHome} />
