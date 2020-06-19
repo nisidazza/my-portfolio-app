@@ -13,13 +13,18 @@ div.skills-list-container {
 
 div.pdf-container {
     margin-top:20px;
-    color: white;
 }
 
 div.num-of-pages {
     font-size: 15px;
     text-align: center;
-    transform: translateX(190px);
+    transform: translateX(180px);
+    margin-bottom: 0;
+    margin-top:5px;
+}
+
+div.num-of-pages p {
+    color: black;
 }
 
 button.btn-size {
@@ -38,6 +43,7 @@ div.page-btns {
     margin-bottom: 20px;
     margin-top: 5px;
     transform: translateY(-50px);
+    width: 580px;
 }
 
 div.next-btn {
@@ -46,7 +52,7 @@ div.next-btn {
 }
 
 div.prev-btn {
-    transform: translateX(70px);
+    transform: translateX(50px);
 }
 
 ul {
