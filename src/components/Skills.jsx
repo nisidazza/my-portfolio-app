@@ -20,6 +20,7 @@ class Skills extends React.Component {
       pageNumber: 1,
       numPages: null,
       isLoaded: false,
+      scale: 1.0
     };
   }
 
@@ -84,7 +85,7 @@ class Skills extends React.Component {
               onLoadSuccess={this.onPdfSuccessfullyLoaded}
               externalLinkTarget="_blank"
             >
-              <Page pageNumber={this.state.pageNumber}></Page>
+              <Page pageNumber={this.state.pageNumber} key={`${this.state.pageNumber}_${this.state.scale}`}></Page>
             </Document>
             {this.state.isLoaded ? (
               <div className="pdf-footer">
