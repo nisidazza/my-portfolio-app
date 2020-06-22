@@ -8,7 +8,7 @@ div.col-sm-6 {
 }
 
 p.home-p {
-    box-shadow: 8px 7px 7px white, 9px 8px 8px purple;
+    box-shadow: 0 11px 7px -7px white, 0 12px 4px -4px purple;
     text-align: center;
 }
 
@@ -22,6 +22,7 @@ span.color-change.name-letter {
 
 span.color-change.name-letter:hover {
     color:white;
+    text-transform: uppercase;
 }
 
 div.animation-typewriter {
