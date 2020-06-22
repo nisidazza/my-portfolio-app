@@ -1,5 +1,11 @@
 import React from "react";
 import { Col, Row, Button } from "reactstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faAngleDoubleRight,
+  faAngleDoubleLeft,
+  faFileDownload,
+} from "@fortawesome/free-solid-svg-icons";
 import "./Style/Skills.css";
 import "./Style/CommonCSS.css";
 import { pdfjs, Document, Page } from "react-pdf";
@@ -76,40 +82,52 @@ class Skills extends React.Component {
             <Document
               file="../Nisida_Azzalini_CV.pdf"
               onLoadSuccess={this.onPdfSuccessfullyLoaded}
-              externalLinkTarget = "_blank"
+              externalLinkTarget="_blank"
             >
               <Page pageNumber={this.state.pageNumber}></Page>
             </Document>
             {this.state.isLoaded ? (
-              <div className="page-btns">
-                <div className="prev-btn">
-                  <Button
-                    disabled={this.state.pageNumber <= 1}
-                    onClick={this.previousPage}
-                    outline
-                    color="primary"
-                    className="btn-size"
-                  >
-                    Previous
-                  </Button>
+              <div className="pdf-footer">
+                <div className="pdf-page-btns">
+                  <div>
+                    <Button
+                      disabled={this.state.pageNumber <= 1}
+                      onClick={this.previousPage}
+                      outline
+                      color="primary"
+                      className="btn-size"
+                    >
+                      <FontAwesomeIcon icon={faAngleDoubleLeft} />
+                    </Button>
+                  </div>
+                  <div className="num-of-pages">
+                    <p>
+                      {this.state.pageNumber ||
+                        (this.state.numPages ? 1 : "--")}{" "}
+                      / {this.state.numPages || "--"}
+                    </p>
+                  </div>
+                  <div>
+                    <Button
+                      disabled={
+                        this.state.pageNumber >= this.state.numberOfPages
+                      }
+                      onClick={this.nextPage}
+                      outline
+                      color="primary"
+                      className="btn-size"
+                    >
+                      <FontAwesomeIcon icon={faAngleDoubleRight} />
+                    </Button>
+                  </div>
                 </div>
-                <div className="num-of-pages">
-                  <p>
-                    Page{" "}
-                    {this.state.pageNumber || (this.state.numPages ? 1 : "--")}{" "}
-                    of {this.state.numPages || "--"}
-                  </p>
-                </div>
-                <div className="next-btn">
-                  <Button
-                    disabled={this.state.pageNumber >= this.state.numberOfPages}
-                    onClick={this.nextPage}
-                    outline
-                    color="primary"
-                    className="btn-size next"
+                <div className="pdf-download">
+                  <a
+                    href="../Nisida_Azzalini_CV.pdf"
+                    download="Nisida_Azzalini_CV"
                   >
-                    Next
-                  </Button>
+                    <FontAwesomeIcon icon={faFileDownload} />
+                  </a>
                 </div>
               </div>
             ) : (
