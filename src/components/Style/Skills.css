@@ -30,22 +30,27 @@ div.num-of-pages p {
 div.pdf-page-btns {
     display: inline-flex;
     margin-left: 20px;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 div.pdf-download {
     float: right;
     margin-right: 20px;
+    margin-top: 10px;
     padding: 2px;
     font-size: 25px;
 }
 
 div.pdf-footer {
-    color: black;
     margin-bottom: 20px;
     margin-top: 5px;
     transform: translateY(-50px);
     width: 580px;
+    background-color: rgb(10, 10, 46);
+}
+
+div.pdf-footer p {
+    color: white;
 }
 
 button.btn-size {
