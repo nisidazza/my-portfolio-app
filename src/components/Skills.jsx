@@ -76,6 +76,7 @@ class Skills extends React.Component {
             <Document
               file="../Nisida_Azzalini_CV.pdf"
               onLoadSuccess={this.onPdfSuccessfullyLoaded}
+              externalLinkTarget = "_blank"
             >
               <Page pageNumber={this.state.pageNumber}></Page>
             </Document>
