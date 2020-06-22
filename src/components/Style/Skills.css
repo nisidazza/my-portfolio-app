@@ -2,6 +2,7 @@ div.skills-container.row {
     position: relative;
     height: 100%;
     color: white;
+    margin: 0;
 }
 
 div.skills-list-container {
@@ -13,7 +14,7 @@ div.skills-list-container {
 }
 
 div.pdf-container {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 div.num-of-pages {
@@ -45,7 +46,7 @@ div.pdf-footer {
     margin-bottom: 20px;
     margin-top: 5px;
     transform: translateY(-50px);
-    width: 580px;
+    width: 575px;
     background-color: rgb(10, 10, 46);
 }
 
@@ -65,6 +66,8 @@ ul {
     font-size: 20px;
 }
 
+.react-pdf__Page,
 .react-pdf__Page__canvas {
-    width: 580px !important;
+    width: 575px !important;
+    margin-right: 10px !important;
 }
