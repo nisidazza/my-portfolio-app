@@ -1,5 +1,5 @@
 div.skills-container.row {
-    position:relative;
+    position: relative;
     height: 100%;
 }
 
@@ -7,38 +7,39 @@ div.skills-list-container {
     color: white;
     position: absolute;
     top: 150px;
-    margin-left:20px;
+    margin-left: 20px;
     max-width: 600px;
 }
 
 div.pdf-container {
-    margin-top:20px;
+    margin-top: 20px;
 }
 
 div.num-of-pages {
     font-size: 15px;
     text-align: center;
-    transform: translateX(180px);
     margin-bottom: 0;
-    margin-top:5px;
+    margin-top: 5px;
 }
 
 div.num-of-pages p {
     color: black;
 }
 
-button.btn-size {
-    padding: 5px;
-    font-size: 15px;
-}
-
-button.btn-size.next {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-div.page-btns {
+div.pdf-page-btns {
     display: inline-flex;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+div.pdf-download {
+    float: right;
+    margin-right: 20px;
+    padding: 2px;
+    font-size: 25px;
+}
+
+div.pdf-footer {
     color: black;
     margin-bottom: 20px;
     margin-top: 5px;
@@ -46,19 +47,18 @@ div.page-btns {
     width: 580px;
 }
 
-div.next-btn {
-    position:relative;
-    transform: translateX(300px);
-}
-
-div.prev-btn {
-    transform: translateX(50px);
+button.btn-size {
+    padding: 2px 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 17px;
+    border: none;
 }
 
 ul {
     font-size: 20px;
 }
 
-.react-pdf__Page__canvas{
+.react-pdf__Page__canvas {
     width: 580px !important;
 }
