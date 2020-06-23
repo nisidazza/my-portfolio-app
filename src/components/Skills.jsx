@@ -7,7 +7,7 @@ import {
   faFileDownload,
 } from "@fortawesome/free-solid-svg-icons";
 import "./Style/Skills.css";
-import "./Style/CommonCSS.css";
+import "./Style/Common.css";
 import { pdfjs, Document, Page } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;

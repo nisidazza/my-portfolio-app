@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Row } from "reactstrap";
 import "./Style/About.css";
-import "./Style/CommonCSS.css";
+import "./Style/Common.css";
 import SpanEachCharacter from "./SpanEachCharacter.jsx";
 
 class About extends React.Component {

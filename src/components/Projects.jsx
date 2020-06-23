@@ -1,6 +1,6 @@
 import React from "react";
 import "./Style/Projects.css";
-import "./Style/CommonCSS.css";
+import "./Style/Common.css";
 import {
   Card,
   CardImg,
