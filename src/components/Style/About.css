@@ -11,3 +11,6 @@ p {
     text-shadow: 2 0 8px black, -2 0 8px black, 0 2 8px black, 0 -2 8px black;
 }
 
+span.color-change:hover {
+    color: fuchsia;
+}

@@ -54,7 +54,6 @@ h1.title-animation span {
     animation-delay: 0.8s;
 }
 
-
 @keyframes changeLetter {
     100% {
         top: -2px;
