@@ -12,15 +12,15 @@ p.home-p {
     text-align: center;
 }
 
-span.color-change:hover {
+span.home-color-change:hover {
     color: purple;
 }
 
-span.color-change.name-letter {
+span.home-color-change.name-letter {
     color:purple;
 }
 
-span.color-change.name-letter:hover {
+span.home-color-change.name-letter:hover {
     color:white;
     text-transform: uppercase;
 }
