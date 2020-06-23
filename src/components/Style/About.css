@@ -1,9 +1,16 @@
+div.about-container {
+    min-height: 100%;
+}
+
+div.col {
+    min-height: 100%;
+}
+
 div.about-me-container {
-    position: absolute;
+    position: relative;
     top: 150px;
     max-width: 600px;
-    max-height: fit-content;
-    margin-left: 20px;
+    margin: auto;
 }
 
 p {
@@ -11,6 +18,19 @@ p {
     text-shadow: 2 0 8px black, -2 0 8px black, 0 2 8px black, 0 -2 8px black;
 }
 
-span.color-change:hover {
-    color: fuchsia;
+span.about-color-change:hover {
+    color: #B00090;
+}
+
+div.profile-img-container {
+    position: relative;
+    max-width: 800px;
+    top: 160px;
+}
+
+img.personal-img {
+    display: block;
+    max-width: 55%;
+    object-fit: cover;
+    margin: 0 50px;
 }
