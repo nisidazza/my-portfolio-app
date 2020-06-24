@@ -16,17 +16,19 @@ class Projects extends React.Component {
   render() {
     return (
       <div className="projects-container">
-        <h1 className="title-animation ml-2 mb-4">
-          <span>P</span>
-          <span>r</span>
-          <span>o</span>
-          <span>j</span>
-          <span>e</span>
-          <span>c</span>
-          <span>t</span>
-          <span>s</span>
-        </h1>
-        <Row className="m-0">
+        <div className=" project-title">
+          <h1 className="title-animation">
+            <span>P</span>
+            <span>r</span>
+            <span>o</span>
+            <span>j</span>
+            <span>e</span>
+            <span>c</span>
+            <span>t</span>
+            <span>s</span>
+          </h1>
+        </div>
+        <Row className="cards-container">
           <Col sm="4">
             <Card>
               <CardBody>
@@ -38,8 +40,9 @@ class Projects extends React.Component {
                   A Web Application to manage your favourite recipes and browse
                   the public recipes of other users. The back-end is built on
                   Node.js with Express.js as a framework. Knex.js queries for
-                  the data from PostgreSQL database. The front-end is built in React.js, 
-                  with the help of Bootstrap and CSS for layout and styling.
+                  the data from PostgreSQL database. The front-end is built in
+                  React.js, with the help of Bootstrap and CSS for layout and
+                  styling.
                 </CardText>
                 <CardLink
                   rel="noopener noreferrer"
