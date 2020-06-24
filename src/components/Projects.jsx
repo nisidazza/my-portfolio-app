@@ -29,7 +29,7 @@ class Projects extends React.Component {
           </h1>
         </div>
         <Row className="cards-container">
-          <Col sm="4">
+          <Col className="projects-left-col">
             <Card>
               <CardBody>
                 <CardTitle>My Recipe Book</CardTitle>
@@ -62,7 +62,7 @@ class Projects extends React.Component {
             </Card>
           </Col>
 
-          <Col sm="4">
+          <Col className="projects-center-col">
             <Card>
               <CardBody>
                 <CardTitle>Personal Blog</CardTitle>
@@ -86,7 +86,7 @@ class Projects extends React.Component {
             </Card>
           </Col>
 
-          <Col sm="4">
+          <Col className="projects-left-col">
             <Card>
               <CardBody>
                 <CardTitle>Gender Dashboard</CardTitle>

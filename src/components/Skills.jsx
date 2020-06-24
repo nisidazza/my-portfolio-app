@@ -50,7 +50,7 @@ class Skills extends React.Component {
   render() {
     return (
       <Row className="skills-container">
-        <Col sm="6">
+        <Col className="skills-left-col">
           <div className="skills-list-container">
             <h1 className="title-animation">
               <span>S</span>
@@ -78,7 +78,7 @@ class Skills extends React.Component {
             </ul>
           </div>
         </Col>
-        <Col sm="6">
+        <Col className="skills-right-col">
           <div className="pdf-container">
             <Document
               file="../Nisida_Azzalini_CV.pdf"

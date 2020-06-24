@@ -8,7 +8,7 @@ class About extends React.Component {
   render() {
     return (
       <Row className="about-container">
-        <Col>
+        <Col className="about-left-col">
           <div className="about-me-container">
             <h1 className="title-animation">
               <span>A</span>
@@ -38,7 +38,7 @@ class About extends React.Component {
             </SpanEachCharacter>
           </div>
         </Col>
-        <Col>
+        <Col className="about-right-col">
           <div className="profile-img-container">
             <img className="personal-img" src="/images/IMG_6921_cropped_transparent.png" alt="Profile" />
           </div>

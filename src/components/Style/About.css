@@ -35,3 +35,17 @@ img.personal-img {
     object-fit: cover;
     margin: 0 50px;
 }
+
+@media(max-aspect-ratio: 9/10) {
+    .about-container {
+        align-items: flex-start;
+    }
+    div.about-left-col.col {
+        order: 2;
+        flex-basis: auto;
+    }
+    div.about-right-col.col {
+        order: 1;
+        margin-bottom: 25%;
+    }
+}
