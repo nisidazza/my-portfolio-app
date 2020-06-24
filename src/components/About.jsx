@@ -21,7 +21,7 @@ class About extends React.Component {
               <span>e</span>
             </h1>
             <SpanEachCharacter charsClassName="about-color-change">
-              After spending 8 years working in accounting and clerical
+              After many years working in accounting and clerical
               professions, I decided to change my career path and shift into the
               tech industry. I graduated at Enspiral Dev Academy in December
               2019 and I am now looking forward to transfer the skills I learned
