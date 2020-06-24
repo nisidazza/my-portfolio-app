@@ -23,9 +23,10 @@ span.about-color-change:hover {
 }
 
 div.profile-img-container {
-    position: relative;
+    position: absolute;
     max-width: 800px;
-    top: 160px;
+    top: 10%;
+    right: 10%;
 }
 
 img.personal-img {
