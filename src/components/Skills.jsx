@@ -76,6 +76,9 @@ class Skills extends React.Component {
               <li>Knex.js</li>
               <li>REST API</li>
             </ul>
+            <h5>Getting familiar with</h5>
+            <li>C#</li>
+            <li>ASP.Net </li>
           </div>
         </Col>
         <Col className="skills-right-col">
