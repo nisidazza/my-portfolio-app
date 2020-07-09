@@ -20,7 +20,7 @@ class Skills extends React.Component {
       pageNumber: 1,
       numPages: null,
       isLoaded: false,
-      scale: 1.0
+      scale: 1.0,
     };
   }
 
@@ -77,8 +77,10 @@ class Skills extends React.Component {
               <li>REST API</li>
             </ul>
             <h5>Getting familiar with</h5>
-            <li>C#</li>
-            <li>ASP.Net </li>
+            <ul>
+              <li>C#</li>
+              <li>ASP.Net</li>
+            </ul>
           </div>
         </Col>
         <Col className="skills-right-col">
@@ -86,9 +88,12 @@ class Skills extends React.Component {
             <Document
               file="../Nisida_Azzalini_CV.pdf"
               onLoadSuccess={this.onPdfSuccessfullyLoaded}
-              externalLinkTarget="_blank"              
+              externalLinkTarget="_blank"
             >
-              <Page pageNumber={this.state.pageNumber} key={`${this.state.pageNumber}_${this.state.scale}`}></Page>
+              <Page
+                pageNumber={this.state.pageNumber}
+                key={`${this.state.pageNumber}_${this.state.scale}`}
+              ></Page>
             </Document>
             {this.state.isLoaded ? (
               <div className="pdf-footer">

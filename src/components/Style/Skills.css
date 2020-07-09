@@ -18,6 +18,7 @@ div.skills-list-container {
 
 div.pdf-container {
     display: inline-block;
+    margin-top: 100px;
 }
 
 div.num-of-pages {
