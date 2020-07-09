@@ -76,6 +76,7 @@ ul {
     div.skills-left-col {
         order: 1;
         flex-basis: auto;
+        margin-bottom: 100px;
     }
 
     div.skills-right-col {
